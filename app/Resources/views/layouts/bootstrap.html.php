@@ -1,20 +1,26 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+<!DOCTYPE html>
+<html>
 	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-		<meta http-equiv="Content-Language" content="fr" />
-		<meta name="language" content="fr" />
-		<meta http-equiv="content-language" content="fr" />
-		<meta name="description" content="<?php echo Page::$description; ?>" />
-		<meta name="robots" content="<?php echo Page::$robots; ?>" />
-
+		<meta charset="utf-8">
+		<meta name="description" content="<?php echo Page::$description; ?>">
+		<meta name="robots" content="<?php echo Page::$robots; ?>">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		
 		<title><?php echo str_replace(array(' '), ' ', Page::$titre); ?></title>
 		
 		<?php $view['vitesse']->requireResource('@ZcoCoreBundle/Resources/public/css/design.css') ?>
 		<?php $view['vitesse']->requireResource('@ZcoCoreBundle/Resources/public/js/design.js') ?>
+		<?php $view['vitesse']->requireResource('@ZcoCoreBundle/Resources/public/js/libs/html5shiv.js') ?>
         
+		<?php foreach ($view['vitesse']->javascripts(array('html5shiv')) as $assetUrl): ?>
+		<!--[if lt IE 9]>
+			<script src="<?php echo $assetUrl ?>"></script>
+		<![endif]-->
+		<?php endforeach ?>
+		
 		<?php foreach ($view['vitesse']->stylesheets() as $assetUrl): ?>
-		    <link rel="stylesheet" href="<?php echo $assetUrl ?>" media="screen" type="text/css" />
+		    <link rel="stylesheet" href="<?php echo $assetUrl ?>" media="screen" type="text/css">
 		<?php endforeach ?>
     	
 		<?php foreach ($view['vitesse']->javascripts(array('mootools', 'mootools-more')) as $assetUrl): ?>
@@ -23,8 +29,8 @@
 		
 		<?php echo $view['vitesse']->renderFeeds() ?>
 		
-		<link rel="icon" type="image/png" href="/favicon.png" />
-		<link rel="start" title="zCorrecteurs.fr - Les réponses à toutes vos questions concernant la langue française !" href="/" />
+		<link rel="icon" type="image/png" href="/favicon.png">
+		<link rel="start" title="zCorrecteurs.fr - Les réponses à toutes vos questions concernant la langue française !" href="/">
 	</head>
 
 	<body>

@@ -84,8 +84,7 @@ class EventListener extends ContainerAware implements EventSubscriberInterface
 			$block->addChild('Votre site ici ?', array(
 				'uri' => $this->container->get('router')->generate('zco_about_contact', array('objet' => 'Partenariat')),
 				'linkAttributes' => array(
-					'title' => 'Devenez partenaire',
-					'rel'   => 'Pour devenir partenaire du site zCorrecteurs.fr, envoyez-nous un courriel via le formulaire de contact.',
+					'title'   => 'Pour devenir partenaire du site zCorrecteurs.fr, envoyez-nous un courriel via le formulaire de contact.',
 				),
 			));
 		}
@@ -144,8 +143,7 @@ class EventListener extends ContainerAware implements EventSubscriberInterface
 						'label' => $p['titre'],
 						'linkAttributes' => array(
 							'id'    => 'pub-'.$p['id'],
-							'title' => $p['titre'],
-							'rel'   => $p['contenu'],
+							'title'   => $p['contenu'],
 						),
 					);
 				}

@@ -59,8 +59,7 @@ class EventListener extends ContainerAware implements EventSubscriberInterface
 			'weight' => 0,
 			'linkAttributes' => array(
 				'style' => 'font-weight: bold;',
-				'rel'   => 'Vous souhaitez nous rejoindre ? Postulez sur notre module de recrutement.', 
-				'title' => 'Recrutement',
+				'title'   => 'Vous souhaitez nous rejoindre ? Postulez sur notre module de recrutement.', 
 			),
 		));
 	}

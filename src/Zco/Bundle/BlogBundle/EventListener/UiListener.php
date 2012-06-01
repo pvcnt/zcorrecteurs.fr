@@ -109,8 +109,7 @@ class UiListener extends ContainerAware implements EventSubscriberInterface
 			'uri'	=> '/blog/mes-billets.html',
 			'weight' => 20,
 			'linkAttributes' => array(
-				'rel'   => 'Proposez votre billet pour qu\'il apparaisse sur la page d\'accueil du site.', 
-				'title' => 'Mes billets',
+				'title'   => 'Proposez votre billet pour qu\'il apparaisse sur la page d\'accueil du site.',
 			),
 		));
 	}

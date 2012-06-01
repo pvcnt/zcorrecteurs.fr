@@ -92,8 +92,7 @@ class EventListener extends ContainerAware implements EventSubscriberInterface
 			'uri'	=> $this->container->get('router')->generate('zco_about_team'),
 			'weight' => 30,
 			'linkAttributes' => array(
-				'rel'   => 'Une page spéciale pour présenter ceux qui dépensent tant d\'énergie pour corriger vos documents et faire vivre le site.', 
-				'title' => 'L\'équipe',
+				'title'   => 'Une page spéciale pour présenter ceux qui dépensent tant d\'énergie pour corriger vos documents et faire vivre le site.',
 			),
 		));
 	}

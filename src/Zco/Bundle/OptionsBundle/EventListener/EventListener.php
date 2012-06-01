@@ -47,8 +47,7 @@ class EventListener implements EventSubscriberInterface
 			'uri'    => '/options/',
 			'weight' => 10,
 			'linkAttributes' => array(
-				'rel'   => 'Changer mon pseudo, mot de passe, avatar, profil, etc., ainsi que les options de navigation et tout ce qui concerne votre compte.', 
-				'title' => 'Mes options',
+				'title'   => 'Changer mon pseudo, mot de passe, avatar, profil, etc., ainsi que les options de navigation et tout ce qui concerne mon compte.',
 			),
 		));
 	}

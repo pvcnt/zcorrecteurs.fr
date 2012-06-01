@@ -197,8 +197,7 @@ class UiListener extends ContainerAware implements EventSubscriberInterface
 				'label'  => htmlspecialchars($_SESSION['pseudo']),
 				'weight' => 0,
 				'linkAttributes' => array(
-					'rel'   => 'Vous êtes actuellement connecté en tant que '.htmlspecialchars($_SESSION['pseudo']).'.', 
-					'title' => 'Mon pseudo',
+					'title'   => 'Vous êtes actuellement connecté en tant que '.htmlspecialchars($_SESSION['pseudo']).'.',
 				),
 			));
 			
@@ -206,8 +205,7 @@ class UiListener extends ContainerAware implements EventSubscriberInterface
 				'uri'	 => $this->container->get('router')->generate('zco_user_session_logout', array('token' => $_SESSION['token'])),
 				'weight' => 40,
 				'linkAttributes' => array(
-					'rel'   => 'Cliquez ici pour vous déconnecter.', 
-					'title' => 'Déconnexion',
+					'title'   => 'Cliquez ici pour vous déconnecter.',
 				),
 			));
 		}
@@ -216,8 +214,7 @@ class UiListener extends ContainerAware implements EventSubscriberInterface
 			'uri'	=> $this->container->get('router')->generate('zco_user_index'),
 			'weight' => 40,
 			'linkAttributes' => array(
-				'rel'   => 'Découvrez la liste des membres de ce site.', 
-				'title' => 'Membres',
+				'title'   => 'Découvrez la liste des membres de ce site.',
 			),
 		));
 		
@@ -227,8 +224,7 @@ class UiListener extends ContainerAware implements EventSubscriberInterface
 			'weight' => 50,
 			'label' => $connectes.' connecté'.pluriel($connectes),
 			'linkAttributes' => array(
-				'rel'   => 'Quels sont les membres actuellement connectés sur le site ?', 
-				'title' => 'Connectés',
+				'title'   => 'Quels sont les membres actuellement connectés sur le site ?',
 			),
 		));
 		

@@ -93,8 +93,7 @@ class EventListener extends ContainerAware implements EventSubscriberInterface
 			'uri'	=> '/dictees/proposer.html',
 			'weight' => 30,
 			'linkAttributes' => array(
-				'rel'   => 'Proposez votre dictée.', 
-				'title' => 'Mes dictées',
+				'title'   => 'Proposez votre dictée.',
 			),
 		));
 	}

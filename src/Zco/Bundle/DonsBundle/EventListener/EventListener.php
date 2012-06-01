@@ -95,8 +95,7 @@ class EventListener implements EventSubscriberInterface
 			    'uri'    => '/dons/',
 			    'weight' => 20,
 			    'linkAttributes' => array(
-				    'rel'   => 'Vous souhaitez aider financièrement le site ? Faites un don !', 
-				    'title' => 'Faire un don',
+				    'title'   => 'Vous souhaitez aider financièrement le site ? Faites un don !',
 			    )
 		    ));
 	}

@@ -16,6 +16,12 @@ Behavior.create('tips', function(config)
 		onHide: function(tip)
 		{
 			tip.fade('out');
+		},
+		title: function(element){
+			return element.get('html');
+		},
+		text: function(element){
+			return element.get('title') || element.get('href');
 		}
     };
     

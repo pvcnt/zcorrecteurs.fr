@@ -8,6 +8,15 @@
  */
 
 /**
+ * Reset de quelques éléments du DOM (compatibilité HTML5/IE).
+ */
+div {
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+/**
  * Remise en forme des titres pour les rendre plus fins que ceux par défaut 
  * de Bootstrap.
  */

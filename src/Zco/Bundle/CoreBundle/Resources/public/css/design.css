@@ -147,6 +147,31 @@ div.content {
 }
 
 /**
+ * ToolTips
+ */
+.tip {
+	color: #fff;
+	width: 139px;
+	margin-left: 45px;
+}
+
+.tip-title {
+	font-size: 11px;
+	border-bottom: 1px solid #444;
+	margin: 0;
+	color: #ff00ea;
+	padding: 6px;
+	font-weight: bold;
+	background: url('../img/bubble.png') top left;
+}
+
+.tip-text {
+	font-size: 10px;
+	padding: 4px;
+	background: url('../img/bubble.png') bottom right;
+}
+
+/**
  * Texte introductif destiné à être placé sur les pages contenant beaucoup 
  * d'éléments graphiques. Il est mis en valeur par une taille plus imposante.
  */

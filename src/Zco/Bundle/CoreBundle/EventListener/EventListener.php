@@ -96,8 +96,8 @@ class EventListener extends ContainerAware implements EventSubscriberInterface
 		$event->initBehavior('morph-link', array('id' => 'toplink'));
 		
 		//Bulles sur les liens du menu latéral.
-		$event->initBehavior('tips', array(
-			'selector' => 'div.sidebarleft a',
+			$event->initBehavior('tips', array(
+			'selector' => array('div.sidebarleft a', 'div.sidebar a'),
 			'options' => array(
 				'fixed' => true,
 				'showDelay' => 1000,

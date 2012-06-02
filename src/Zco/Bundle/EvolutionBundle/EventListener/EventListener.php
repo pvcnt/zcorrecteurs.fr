@@ -54,8 +54,8 @@ class EventListener extends ContainerAware implements EventSubscriberInterface
 		if (verifier('tracker_voir') && $event->getTemplate() === 'legacy')
     	{
     		$event->setContent(str_replace(
-				'<p class="arianne">', 
-				'<p class="arianne"><span style="float: right;">' .
+				'<div id="ariane">', 
+				'<div id="ariane"><span style="float: right;">' .
     				'<a href="/evolution/">' .
     				'<img src="/pix.gif" class="fff bug" alt="" /> Signaler une anomalie'.
 					(verifier('tracker_etre_assigne') ? 

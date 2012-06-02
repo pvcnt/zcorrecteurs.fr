@@ -46,11 +46,11 @@ function fil_ariane($id = null, $enfants = array())
 				$url .= FormateURLCategorie($p['cat_id']);
 			else
 				$url = FormateURLCategorie($p['cat_id']);
-			$items[] = '<a href="'.$url.'">'.htmlspecialchars($p['cat_nom']).'</a>';
+			$items[] = '<li><a href="'.$url.'">'.htmlspecialchars($p['cat_nom']).'</a></li>';
 		}
 		else
 		{
-			$items[] = htmlspecialchars($p['cat_nom']);
+			$items[] = '<li>' . htmlspecialchars($p['cat_nom']) . '</li>';
 		}
 	}
 
@@ -63,11 +63,11 @@ function fil_ariane($id = null, $enfants = array())
 	{
 		if(!empty($cle))
 		{
-			$items[] = '<a href="'.$valeur.'">'.$cle.'</a>';
+			$items[] = '<li><a href="'.$valeur.'">'.$cle.'</a></li>';
 		}
 		else
 		{
-			$items[] = $valeur;
+			$items[] = '<li>' . $valeur . '</li>';
 		}
 	}
 

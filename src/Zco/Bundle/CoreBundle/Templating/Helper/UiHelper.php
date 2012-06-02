@@ -96,10 +96,10 @@ class UiHelper extends Helper
 	 */
 	public function breadcrumb($template)
 	{
-		$fil  = ($template === 'legacy') ? '<p class="arianne">' : '<ul class="breadcrumb">';
-		$fil .= ($template === 'legacy') ? 'Vous êtes ici : ' : '';
-		$fil .= implode(($template === 'legacy') ? ' &gt; ' : '<span class="divider">»</span>', \Page::$fil_ariane);
-		$fil .= ($template === 'legacy') ? '</p>' : '</ul>';
+		$fil  = ($template === 'legacy') ? '<div id="ariane">' : '<ul class="breadcrumb">';
+		$fil .= ($template === 'legacy') ? '<p>Vous êtes ici :</p> <ul id="ul-ariane">' : '';
+		$fil .= implode(($template === 'legacy') ? ' <span class="divider">&gt;</span> ' : '<li>»</li>', \Page::$fil_ariane);
+		$fil .= ($template === 'legacy') ? '</ul></div>' : '</ul>';
 
 		return $this->filterBlock($fil, 'breadcrumb', $template);
 	}

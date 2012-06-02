@@ -460,7 +460,7 @@ em {
 	width: 100%!important;
 }
 
-p.arianne {
+#ariane {
 	font-size: 10px;
 	border-top: 1px solid #d6d6d6;
 	border-bottom: 1px solid #d6d6d6;
@@ -471,11 +471,29 @@ p.arianne {
 	line-height: 16px;
 }
 
-p.arianne .centre_aide {
+#ariane .centre_aide {
 	float: left;
 	display:block;
 	margin-right: 5px;
 	margin-top: -1px;
+}
+
+#ariane p {
+	float: left;
+	margin: 0 5px !important;
+}
+
+#ul-ariane {
+	float: left;
+}
+
+#ul-ariane li {
+	display: inline-block;
+	*display: inline;
+	/* IE7 inline-block hack */
+
+	margin-left: 0;
+	*zoom: 1;
 }
 
 #content p {

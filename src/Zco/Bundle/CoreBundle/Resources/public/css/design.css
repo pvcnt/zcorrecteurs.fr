@@ -68,6 +68,13 @@ body > .container-fluid, body > .container {
 }
 
 /**
+ * Espacement des puces du fil d'Ariane.
+ */
+.breadcrumb li {
+	margin-right: 5px;
+}
+
+/**
  * Style d'un label qu'on force à ne pas flotter à côté de son champ.
  */
 label.nofloat {

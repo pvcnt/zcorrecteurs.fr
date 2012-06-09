@@ -1,4 +1,4 @@
-<?php $view->extend('ZcoDonsBundle::layout.html.php') ?>
+<?php $view->extend('::layouts/bootstrap.html.php') ?>
 
 <div style="float: right; width: 340px;">
     <?php echo $view->render('ZcoDonsBundle::_menu.html.php', array('donner' => false)) ?>

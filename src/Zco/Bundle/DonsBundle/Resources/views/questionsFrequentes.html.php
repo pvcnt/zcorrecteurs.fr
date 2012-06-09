@@ -1,4 +1,4 @@
-<?php $view->extend('ZcoDonsBundle::layout.html.php') ?>
+<?php $view->extend('::layouts/bootstrap.html.php') ?>
 
 <h1>Questions fréquentes</h1>
 
